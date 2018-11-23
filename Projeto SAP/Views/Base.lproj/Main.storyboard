@@ -20,19 +20,20 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-Hm-SKC" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
                                 <rect key="frame" x="8" y="72" width="359" height="65"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Jxb-2h-wkh"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Controle de Frota">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
                                         <real key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderStyle">
-                                        <real key="value" value="-4"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -41,12 +42,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLE-Hz-aOt" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
                                 <rect key="frame" x="8" y="172" width="359" height="65"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="1DX-Mk-6ZB"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Movimento do Caixa">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
@@ -57,21 +59,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFw-dV-DQP">
-                                <rect key="frame" x="18" y="162" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="6FJ-m0-msA"/>
-                                    <constraint firstAttribute="width" constant="70" id="C9E-TO-IWn"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="folder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFw-dV-DQP">
+                                <rect key="frame" x="31" y="181" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-EX-eMN" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
                                 <rect key="frame" x="8" y="272" width="359" height="65"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="6Si-zB-yPM"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Gerenciar Funcionários ">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.18880763649940491" alpha="0.900390625" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
@@ -82,21 +83,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funcionario.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7f-L0-V0D">
-                                <rect key="frame" x="18" y="262" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="7q1-xi-2w0"/>
-                                    <constraint firstAttribute="width" constant="70" id="84r-h4-jIS"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="funcionario.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7f-L0-V0D">
+                                <rect key="frame" x="31" y="281" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-8y-anI" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
                                 <rect key="frame" x="8" y="372" width="359" height="65"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="chr-pA-W3m"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Emitir Relatórios">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.18880763649940491" alpha="0.900390625" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
@@ -107,43 +107,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-Vb-ypz">
-                                <rect key="frame" x="18" y="62" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="DBT-wl-lAR"/>
-                                    <constraint firstAttribute="width" constant="70" id="KZ0-QR-d7E"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-Vb-ypz">
+                                <rect key="frame" x="31" y="81" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relatorio.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ab-7R-b7M">
-                                <rect key="frame" x="18" y="362" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="8Rl-vZ-d72"/>
-                                    <constraint firstAttribute="width" constant="70" id="kfh-DM-qbL"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="relatorio.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ab-7R-b7M">
+                                <rect key="frame" x="31" y="381" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.18880763649940491" alpha="0.900390625" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="pxR-Hm-SKC" secondAttribute="trailing" constant="8" id="1CJ-0k-bIb"/>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="pLE-Hz-aOt" secondAttribute="trailing" constant="8" id="2fU-nL-Ws5"/>
-                            <constraint firstItem="0ab-7R-b7M" firstAttribute="leading" secondItem="P7f-L0-V0D" secondAttribute="leading" id="8sW-dx-ejG"/>
                             <constraint firstItem="T8Q-8y-anI" firstAttribute="top" secondItem="DJh-EX-eMN" secondAttribute="bottom" constant="35" id="Bgz-zS-YYS"/>
                             <constraint firstItem="pLE-Hz-aOt" firstAttribute="top" secondItem="pxR-Hm-SKC" secondAttribute="bottom" constant="35" id="G1M-tu-wRh"/>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="T8Q-8y-anI" secondAttribute="trailing" constant="8" id="GY8-vJ-5d1"/>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="DJh-EX-eMN" secondAttribute="trailing" constant="8" id="GoD-vn-bws"/>
                             <constraint firstItem="pxR-Hm-SKC" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="Hnb-XI-6f5"/>
-                            <constraint firstItem="0ab-7R-b7M" firstAttribute="top" secondItem="DJh-EX-eMN" secondAttribute="bottom" constant="25" id="IJ7-bI-eSe"/>
-                            <constraint firstItem="bHD-Vb-ypz" firstAttribute="top" secondItem="XBq-45-3pW" secondAttribute="top" constant="42" id="JoO-V2-yfc"/>
                             <constraint firstItem="DJh-EX-eMN" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="MZD-hQ-0Hx"/>
                             <constraint firstItem="T8Q-8y-anI" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="MZk-gx-yb1"/>
-                            <constraint firstItem="ZFw-dV-DQP" firstAttribute="leading" secondItem="bHD-Vb-ypz" secondAttribute="leading" id="N1B-0S-JuE"/>
                             <constraint firstItem="pxR-Hm-SKC" firstAttribute="top" secondItem="XBq-45-3pW" secondAttribute="top" constant="52" id="Tuv-jk-QwG"/>
-                            <constraint firstItem="P7f-L0-V0D" firstAttribute="top" secondItem="pLE-Hz-aOt" secondAttribute="bottom" constant="25" id="Va0-xu-FJR"/>
-                            <constraint firstItem="bHD-Vb-ypz" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="18" id="ZII-Kb-tm4"/>
                             <constraint firstItem="DJh-EX-eMN" firstAttribute="top" secondItem="pLE-Hz-aOt" secondAttribute="bottom" constant="35" id="ZyF-wr-fDu"/>
                             <constraint firstItem="pLE-Hz-aOt" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="bJP-xc-fva"/>
-                            <constraint firstItem="ZFw-dV-DQP" firstAttribute="top" secondItem="pxR-Hm-SKC" secondAttribute="bottom" constant="25" id="c7h-He-ske"/>
-                            <constraint firstItem="P7f-L0-V0D" firstAttribute="leading" secondItem="ZFw-dV-DQP" secondAttribute="leading" id="yDK-8S-SdA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XBq-45-3pW"/>
                     </view>
@@ -170,12 +156,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-8W-Ggl">
                                 <rect key="frame" x="32" y="120" width="311" height="447"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCX-G8-gse">
-                                        <rect key="frame" x="50" y="32" width="211" height="43"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCX-G8-gse" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="32" width="279" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="Wtm-pc-XL0"/>
                                         </constraints>
                                         <state key="normal" title="Cadastro de Guia do Cobrador"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderStyle">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.28627450980000002" green="0.52156862749999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="6Hb-GU-gHk" kind="show" identifier="cadastroDeGuia" id="m2z-Zh-tJS"/>
                                         </connections>
@@ -194,11 +191,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="DCX-G8-gse" firstAttribute="leading" secondItem="bgq-8W-Ggl" secondAttribute="leading" constant="50" id="O7C-XG-IeM"/>
+                                    <constraint firstItem="DCX-G8-gse" firstAttribute="leading" secondItem="bgq-8W-Ggl" secondAttribute="leading" constant="16" id="O7C-XG-IeM"/>
                                     <constraint firstItem="DCX-G8-gse" firstAttribute="top" secondItem="bgq-8W-Ggl" secondAttribute="top" constant="32" id="Qbo-Zn-Udg"/>
                                     <constraint firstAttribute="bottom" secondItem="dOX-Da-g8J" secondAttribute="bottom" constant="30" id="YfM-ks-bOi"/>
                                     <constraint firstItem="dOX-Da-g8J" firstAttribute="centerX" secondItem="bgq-8W-Ggl" secondAttribute="centerX" id="ei1-sm-cUc"/>
-                                    <constraint firstAttribute="trailing" secondItem="DCX-G8-gse" secondAttribute="trailing" constant="50" id="q91-wB-zgs"/>
+                                    <constraint firstAttribute="trailing" secondItem="DCX-G8-gse" secondAttribute="trailing" constant="16" id="q91-wB-zgs"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -236,8 +233,8 @@
                                         </constraints>
                                         <state key="normal" image="error"/>
                                         <connections>
+                                            <action selector="close:" destination="6Hb-GU-gHk" eventType="touchUpInside" id="O6e-xh-blo"/>
                                             <action selector="close:" destination="Mej-sO-DOr" eventType="touchUpInside" id="X5s-sZ-KLf"/>
-                                            <segue destination="7TL-aW-mEQ" kind="unwind" unwindAction="unwindToHome:" id="Wsp-bO-Jef"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWg-dp-kV9">
@@ -296,7 +293,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLr-ww-hON" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="7TL-aW-mEQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4780" y="-917.09145427286364"/>
         </scene>

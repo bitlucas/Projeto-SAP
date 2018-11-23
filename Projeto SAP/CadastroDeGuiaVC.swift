@@ -49,6 +49,10 @@ class CadastroDeGuiaVC: UIViewController {
         dateFormatter.dateFormat = "dd/MM/yyyy"
         tfDate.text = dateFormatter.string(from: datePicker.date)
     }
+    
+    @IBAction func close(_ sender : UIButton!) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension UITextField {
