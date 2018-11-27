@@ -23,6 +23,7 @@
 		1C5FD771219B8464002E52EB /* funcionario.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5FD76A219B8463002E52EB /* funcionario.png */; };
 		1C5FD772219B8464002E52EB /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5FD76B219B8464002E52EB /* bus.png */; };
 		1C5FD779219B8EB1002E52EB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5FD778219B8EB1002E52EB /* HomeVC.swift */; };
+		1C9D44A421ADD18B007E6C00 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9D44A321ADD18B007E6C00 /* back-arrow.png */; };
 		1CD68A44219CD3A600E93178 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD68A43219CD3A600E93178 /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		1C5FD76A219B8463002E52EB /* funcionario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = funcionario.png; path = ../../../SAP/Files/funcionario.png; sourceTree = "<group>"; };
 		1C5FD76B219B8464002E52EB /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus.png; path = ../../../SAP/Files/bus.png; sourceTree = "<group>"; };
 		1C5FD778219B8EB1002E52EB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		1C9D44A321ADD18B007E6C00 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
 		1CD68A43219CD3A600E93178 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				1C5FD76B219B8464002E52EB /* bus.png */,
 				1C5FD767219B8462002E52EB /* edit-list.png */,
 				1C5FD766219B8462002E52EB /* error.png */,
+				1C9D44A321ADD18B007E6C00 /* back-arrow.png */,
 				1C5FD768219B8462002E52EB /* folder.png */,
 				1C5FD76A219B8463002E52EB /* funcionario.png */,
 				1C5FD765219B8462002E52EB /* list.png */,
@@ -191,6 +194,7 @@
 				1C5FD75A219B8358002E52EB /* Assets.xcassets in Resources */,
 				1C5FD758219B8357002E52EB /* Main.storyboard in Resources */,
 				1C5FD76C219B8464002E52EB /* list.png in Resources */,
+				1C9D44A421ADD18B007E6C00 /* back-arrow.png in Resources */,
 				1C5FD76F219B8464002E52EB /* folder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

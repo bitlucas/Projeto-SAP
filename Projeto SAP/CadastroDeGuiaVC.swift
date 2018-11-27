@@ -17,29 +17,30 @@ class CadastroDeGuiaVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tfDate.text = date
-        tfDate.setBottomBorder()
-        tfTurn.setBottomBorder()
+        //tfDate.setBottomBorder()
+        //tfTurn.setBottomBorder()
         
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(tapRecognizer:)))
-        
-        view.addGestureRecognizer(tapGesture)
-    }
-    
-    @objc func viewTapped(tapRecognizer : UITapGestureRecognizer) {
-        view.endEditing(true)
     }
     
 
     
     @IBAction func close(_ sender : UIButton!) {
-        dismiss(animated: true, completion: nil)
+        
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
+        transition.type = CATransitionType.moveIn
+        transition.subtype = CATransitionSubtype.fromLeft
+        self.view.window!.layer.add(transition, forKey: nil)
+        self.dismiss(animated: false, completion: nil)
+        
+        //dismiss(animated: true, completion: nil)
     }
 }
 
 extension UITextField {
     func setBottomBorder() {
-        let bg = UIColor(red: CGFloat(97.0/255.0), green: CGFloat(88.0/255.0), blue: CGFloat(172.0/255.0), alpha: CGFloat(1.0))
+        let bg = UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(1.0))
         self.borderStyle = .none
         self.layer.masksToBounds = false
         self.layer.backgroundColor = bg.cgColor
