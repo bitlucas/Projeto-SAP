@@ -175,9 +175,9 @@
                                         <locale key="locale" localeIdentifier="pt_BR"/>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2U-BM-kut" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                        <rect key="frame" x="110" y="277" width="100" height="35"/>
+                                        <rect key="frame" x="160" y="277" width="130" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="ruC-NP-oeV"/>
+                                            <constraint firstAttribute="width" constant="130" id="ruC-NP-oeV"/>
                                             <constraint firstAttribute="height" constant="35" id="uXp-Rn-Hsz"/>
                                         </constraints>
                                         <state key="normal" title="Salvar">
@@ -198,13 +198,21 @@
                                             <action selector="saveTheDate:" destination="n8O-ey-SUy" eventType="touchUpInside" id="By9-VA-QvL"/>
                                         </connections>
                                     </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="rSV-ut-8E1">
+                                        <rect key="frame" x="25" y="277" width="105" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.45768774769999998" green="0.33691096729999997" blue="0.83889336550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="z2U-BM-kut" firstAttribute="centerX" secondItem="bgv-ZV-R16" secondAttribute="centerX" id="0aa-Fr-Pdo"/>
                                     <constraint firstAttribute="trailing" secondItem="0b8-CK-fjX" secondAttribute="trailing" id="0vy-Ql-UNs"/>
                                     <constraint firstAttribute="bottom" secondItem="z2U-BM-kut" secondAttribute="bottom" constant="16" id="8om-7c-fXm"/>
                                     <constraint firstAttribute="trailing" secondItem="8RG-ef-fxU" secondAttribute="trailing" id="AUD-FH-8qb"/>
+                                    <constraint firstAttribute="trailing" secondItem="z2U-BM-kut" secondAttribute="trailing" constant="30" id="Ogv-t0-gif"/>
                                     <constraint firstAttribute="height" constant="328" id="Wb3-wp-l4a"/>
                                     <constraint firstItem="0b8-CK-fjX" firstAttribute="leading" secondItem="bgv-ZV-R16" secondAttribute="leading" id="cP1-C3-mGv"/>
                                     <constraint firstItem="0b8-CK-fjX" firstAttribute="top" secondItem="8RG-ef-fxU" secondAttribute="bottom" id="cpa-9n-rqy"/>
@@ -223,7 +231,9 @@
                     </view>
                     <connections>
                         <outlet property="btnSave" destination="z2U-BM-kut" id="npr-EO-XRJ"/>
-                        <outlet property="datePicker" destination="0b8-CK-fjX" id="1GY-ik-HHJ"/>
+                        <outlet property="datePicker" destination="0b8-CK-fjX" id="uLa-VS-RhN"/>
+                        <outlet property="lbDate" destination="rSV-ut-8E1" id="0Wg-K6-sAE"/>
+                        <segue destination="6Hb-GU-gHk" kind="show" identifier="CadastroDeGuiaVC" id="neN-Q1-7Jm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HlE-qU-0Zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -339,15 +349,15 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="dd/MM/yyyy" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="mWA-ky-8VI">
-                                                <rect key="frame" x="8" y="77" width="79" height="16"/>
+                                                <rect key="frame" x="8" y="77" width="111" height="25"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Manhã" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="For-TM-CxU">
-                                                <rect key="frame" x="131" y="76.5" width="48" height="17"/>
+                                                <rect key="frame" x="131" y="77" width="86" height="26"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -355,16 +365,16 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-ov-ugs">
-                                                <rect key="frame" x="131" y="54" width="44" height="21"/>
+                                                <rect key="frame" x="131" y="54" width="42" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWg-dp-kV9">
-                                                <rect key="frame" x="8" y="54" width="36" height="21"/>
+                                                <rect key="frame" x="8" y="54" width="34" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -407,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLr-ww-hON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4866" y="-1466"/>
+            <point key="canvasLocation" x="4864.8000000000002" y="-1466.2668665667168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="st3-Lv-Uec">
