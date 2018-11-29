@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-Hm-SKC" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="72" width="359" height="65"/>
-                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="8" y="146" width="359" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Jxb-2h-wkh"/>
                                 </constraints>
@@ -36,13 +36,10 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Mej-sO-DOr" kind="presentation" id="u0g-ee-Bn2"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLE-Hz-aOt" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="172" width="359" height="65"/>
-                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="8" y="246" width="359" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="1DX-Mk-6ZB"/>
                                 </constraints>
@@ -59,13 +56,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="folder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFw-dV-DQP">
-                                <rect key="frame" x="31" y="181" width="47" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFw-dV-DQP">
+                                <rect key="frame" x="30" y="255" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="SY7-VR-JE5"/>
+                                    <constraint firstAttribute="height" constant="47" id="Tw6-h5-mFE"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-EX-eMN" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="272" width="359" height="65"/>
-                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="8" y="346" width="359" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="6Si-zB-yPM"/>
                                 </constraints>
@@ -83,13 +83,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="funcionario.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7f-L0-V0D">
-                                <rect key="frame" x="31" y="281" width="47" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funcionario.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7f-L0-V0D">
+                                <rect key="frame" x="30" y="355" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Mc6-Ec-XmH"/>
+                                    <constraint firstAttribute="width" constant="47" id="kqS-pi-VpQ"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-8y-anI" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="372" width="359" height="65"/>
-                                <color key="backgroundColor" red="0.28627450980392155" green="0.52156862745098043" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="8" y="446" width="359" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="chr-pA-W3m"/>
                                 </constraints>
@@ -107,29 +110,74 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-Vb-ypz">
-                                <rect key="frame" x="31" y="81" width="47" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-Vb-ypz">
+                                <rect key="frame" x="30" y="155" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="CWN-64-dTm"/>
+                                    <constraint firstAttribute="width" constant="47" id="DR5-ut-IRq"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="relatorio.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ab-7R-b7M">
-                                <rect key="frame" x="31" y="381" width="47" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlU-cG-GTz" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
+                                <rect key="frame" x="8" y="46" width="359" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="zZX-km-qTy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Cadastro de Guia">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="n8O-ey-SUy" kind="presentation" id="X2e-Hi-dbY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kZf-mE-DBh">
+                                <rect key="frame" x="30" y="55" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="PvI-hY-Gec"/>
+                                    <constraint firstAttribute="width" constant="47" id="QzO-u9-iNp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relatorio.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ab-7R-b7M">
+                                <rect key="frame" x="30" y="455" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="8H6-vo-B8o"/>
+                                    <constraint firstAttribute="width" constant="47" id="aU0-4S-oBC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="pxR-Hm-SKC" secondAttribute="trailing" constant="8" id="1CJ-0k-bIb"/>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="pLE-Hz-aOt" secondAttribute="trailing" constant="8" id="2fU-nL-Ws5"/>
+                            <constraint firstItem="pxR-Hm-SKC" firstAttribute="top" secondItem="OlU-cG-GTz" secondAttribute="bottom" constant="35" id="9rj-uA-5Jz"/>
+                            <constraint firstItem="P7f-L0-V0D" firstAttribute="centerY" secondItem="DJh-EX-eMN" secondAttribute="centerY" id="AFJ-57-uQl"/>
+                            <constraint firstItem="kZf-mE-DBh" firstAttribute="top" secondItem="XBq-45-3pW" secondAttribute="top" constant="35" id="AKr-VK-v9t"/>
                             <constraint firstItem="T8Q-8y-anI" firstAttribute="top" secondItem="DJh-EX-eMN" secondAttribute="bottom" constant="35" id="Bgz-zS-YYS"/>
                             <constraint firstItem="pLE-Hz-aOt" firstAttribute="top" secondItem="pxR-Hm-SKC" secondAttribute="bottom" constant="35" id="G1M-tu-wRh"/>
+                            <constraint firstItem="kZf-mE-DBh" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="30" id="GGb-2k-vdo"/>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="T8Q-8y-anI" secondAttribute="trailing" constant="8" id="GY8-vJ-5d1"/>
+                            <constraint firstItem="bHD-Vb-ypz" firstAttribute="leading" secondItem="ZFw-dV-DQP" secondAttribute="leading" id="Ghn-8I-cV8"/>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="DJh-EX-eMN" secondAttribute="trailing" constant="8" id="GoD-vn-bws"/>
                             <constraint firstItem="pxR-Hm-SKC" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="Hnb-XI-6f5"/>
+                            <constraint firstItem="ZFw-dV-DQP" firstAttribute="centerY" secondItem="pLE-Hz-aOt" secondAttribute="centerY" id="JNP-Jm-kL7"/>
+                            <constraint firstItem="0ab-7R-b7M" firstAttribute="centerY" secondItem="T8Q-8y-anI" secondAttribute="centerY" id="MSD-c0-XBy"/>
                             <constraint firstItem="DJh-EX-eMN" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="MZD-hQ-0Hx"/>
                             <constraint firstItem="T8Q-8y-anI" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="MZk-gx-yb1"/>
-                            <constraint firstItem="pxR-Hm-SKC" firstAttribute="top" secondItem="XBq-45-3pW" secondAttribute="top" constant="52" id="Tuv-jk-QwG"/>
+                            <constraint firstItem="P7f-L0-V0D" firstAttribute="leading" secondItem="0ab-7R-b7M" secondAttribute="leading" id="Tth-NK-bYy"/>
                             <constraint firstItem="DJh-EX-eMN" firstAttribute="top" secondItem="pLE-Hz-aOt" secondAttribute="bottom" constant="35" id="ZyF-wr-fDu"/>
                             <constraint firstItem="pLE-Hz-aOt" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="bJP-xc-fva"/>
+                            <constraint firstItem="kZf-mE-DBh" firstAttribute="leading" secondItem="bHD-Vb-ypz" secondAttribute="leading" id="g29-AG-F6a"/>
+                            <constraint firstItem="bHD-Vb-ypz" firstAttribute="centerY" secondItem="pxR-Hm-SKC" secondAttribute="centerY" id="gwA-0a-e4f"/>
+                            <constraint firstItem="OlU-cG-GTz" firstAttribute="leading" secondItem="XBq-45-3pW" secondAttribute="leading" constant="8" id="hIl-D6-JqQ"/>
+                            <constraint firstItem="OlU-cG-GTz" firstAttribute="top" secondItem="XBq-45-3pW" secondAttribute="top" constant="26" id="jYb-Ys-UQK"/>
+                            <constraint firstItem="ZFw-dV-DQP" firstAttribute="leading" secondItem="P7f-L0-V0D" secondAttribute="leading" id="vKQ-oR-kc7"/>
+                            <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="OlU-cG-GTz" secondAttribute="trailing" constant="8" id="zs3-wW-EsM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XBq-45-3pW"/>
                     </view>
@@ -213,7 +261,6 @@
                                         </constraints>
                                         <state key="normal" image="error"/>
                                         <connections>
-                                            <action selector="close:" destination="Mej-sO-DOr" eventType="touchUpInside" id="C03-fk-42Z"/>
                                             <action selector="closeWithoutSave:" destination="n8O-ey-SUy" eventType="touchUpInside" id="wBL-Sc-brI"/>
                                         </connections>
                                     </button>
@@ -251,89 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HlE-qU-0Zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4024.8000000000002" y="-1616.041979010495"/>
-        </scene>
-        <!--Controle De FrotaVC-->
-        <scene sceneID="Amv-CC-QUS">
-            <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="Mej-sO-DOr" customClass="ControleDeFrotaVC" customModule="Projeto_SAP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" contentMode="scaleToFill" id="yII-15-Ail">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rm6-lO-lgD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-8W-Ggl">
-                                        <rect key="frame" x="0.0" y="220" width="375" height="447"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOX-Da-g8J">
-                                                <rect key="frame" x="167.5" y="379" width="40" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="dEw-Gp-blK"/>
-                                                    <constraint firstAttribute="width" constant="40" id="nxc-mf-bAG"/>
-                                                </constraints>
-                                                <state key="normal" image="error"/>
-                                                <connections>
-                                                    <action selector="close:" destination="Mej-sO-DOr" eventType="touchUpInside" id="rR7-Vt-h4Z"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCX-G8-gse" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                                <rect key="frame" x="50" y="40" width="275" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="Wtm-pc-XL0"/>
-                                                </constraints>
-                                                <state key="normal" title="Cadastro de Guia do Cobrador"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="roundedCorner">
-                                                        <real key="value" value="22"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderStyle">
-                                                        <real key="value" value="0.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.28627450980000002" green="0.52156862749999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="n8O-ey-SUy" kind="presentation" id="QT3-C7-W6j"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="DCX-G8-gse" firstAttribute="top" secondItem="bgq-8W-Ggl" secondAttribute="top" constant="40" id="CSx-eV-Rsy"/>
-                                            <constraint firstAttribute="bottom" secondItem="dOX-Da-g8J" secondAttribute="bottom" constant="28" id="OWo-xt-Yv1"/>
-                                            <constraint firstItem="dOX-Da-g8J" firstAttribute="centerX" secondItem="bgq-8W-Ggl" secondAttribute="centerX" id="V0l-BE-gnk"/>
-                                            <constraint firstItem="DCX-G8-gse" firstAttribute="centerX" secondItem="bgq-8W-Ggl" secondAttribute="centerX" id="ch1-Le-obD"/>
-                                            <constraint firstAttribute="trailing" secondItem="DCX-G8-gse" secondAttribute="trailing" constant="50" id="gYA-lE-QSd"/>
-                                            <constraint firstItem="DCX-G8-gse" firstAttribute="leading" secondItem="bgq-8W-Ggl" secondAttribute="leading" constant="50" id="ury-Zv-xKb"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="0.74909032534246578" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="bgq-8W-Ggl" firstAttribute="top" secondItem="Rm6-lO-lgD" secondAttribute="top" constant="220" id="2Bf-7d-onY"/>
-                                    <constraint firstItem="bgq-8W-Ggl" firstAttribute="leading" secondItem="Rm6-lO-lgD" secondAttribute="leading" id="47I-4O-8Oh"/>
-                                    <constraint firstAttribute="bottom" secondItem="bgq-8W-Ggl" secondAttribute="bottom" id="RMa-s0-ti1"/>
-                                    <constraint firstAttribute="trailing" secondItem="bgq-8W-Ggl" secondAttribute="trailing" id="lVo-hN-SWg"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Rm6-lO-lgD" secondAttribute="trailing" id="lqr-w8-MJy"/>
-                            <constraint firstItem="Rm6-lO-lgD" firstAttribute="leading" secondItem="yII-15-Ail" secondAttribute="leading" id="vmb-VP-7oe"/>
-                            <constraint firstItem="Rm6-lO-lgD" firstAttribute="top" secondItem="yII-15-Ail" secondAttribute="top" id="yDA-9R-wPF"/>
-                            <constraint firstItem="Rm6-lO-lgD" firstAttribute="bottom" secondItem="EuN-WY-D21" secondAttribute="bottom" id="yqh-xj-b5e"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="EuN-WY-D21"/>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pDK-nQ-8Jm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4024.8000000000002" y="-917.09145427286364"/>
+            <point key="canvasLocation" x="4025" y="-922"/>
         </scene>
         <!--Cadastro De GuiaVC-->
         <scene sceneID="Tfs-0Z-tzh">
@@ -358,7 +323,6 @@
                                                 <state key="normal" image="back-arrow.png"/>
                                                 <connections>
                                                     <action selector="close:" destination="6Hb-GU-gHk" eventType="touchUpInside" id="O6e-xh-blo"/>
-                                                    <action selector="close:" destination="Mej-sO-DOr" eventType="touchUpInside" id="X5s-sZ-KLf"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" text="27/11/2028" adjustsFontForContentSizeCategory="YES" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="mWA-ky-8VI">
@@ -446,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLr-ww-hON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4864.8000000000002" y="-1466.2668665667168"/>
+            <point key="canvasLocation" x="4865" y="-773"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="st3-Lv-Uec">
@@ -470,6 +434,7 @@
     <resources>
         <image name="back-arrow.png" width="256" height="256"/>
         <image name="bus.png" width="512" height="512"/>
+        <image name="check-mark.png" width="969" height="1399"/>
         <image name="error" width="40.069564819335938" height="40.069564819335938"/>
         <image name="folder.png" width="512" height="512"/>
         <image name="funcionario.png" width="512" height="512"/>

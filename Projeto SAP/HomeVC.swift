@@ -25,9 +25,4 @@ class HomeVC: UIViewController {
         
     }
     
-    deinit {
-        print("homevc removed from memory.")
-    }
-    
-    
 }
