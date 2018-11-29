@@ -14,12 +14,16 @@ class PopupDateVC: UIViewController {
     @IBOutlet weak var btnSave: DesignableButton!
     @IBOutlet weak var lbDate : UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
-    private var dateString : String = ""
-    let dateFormatter = DateFormatter()
-    
-    
+
+    var formattedDate : String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+         return formatter.string(from: datePicker.date)
+    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setDateOnInit()
         datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: UIControl.Event.valueChanged)
 //        let tapGesture = UITapGestureRecognizer(target:       self, action: #selector(viewTapped(tapRecognizer:)))
@@ -28,16 +32,11 @@ class PopupDateVC: UIViewController {
     }
     
     func setDateOnInit(){
-        let today = Date()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        dateString = dateFormatter.string(from: today)
-        lbDate.text = dateString
+        lbDate.text = formattedDate
     }
     
     @objc func datePickerValueChanged(datePicker : UIDatePicker){
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        dateString = dateFormatter.string(from: datePicker.date)
-        lbDate.text = dateString
+        lbDate.text = formattedDate
     }
     
 //    @objc func viewTapped(tapRecognizer : UITapGestureRecognizer) {
@@ -47,7 +46,7 @@ class PopupDateVC: UIViewController {
 //
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? CadastroDeGuiaVC{
-            vc.date = dateString
+            vc.date = formattedDate
         }
     }
     

@@ -10,7 +10,7 @@ import UIKit
 
 class HomeVC: UIViewController {
 
-    @IBOutlet weak var btnControleDeFrota: DesignableButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +23,10 @@ class HomeVC: UIViewController {
     
         view.setGradientBackground(firstColor: color1, secondColor: color2)
         
+    }
+    
+    deinit {
+        print("homevc removed from memory.")
     }
     
     

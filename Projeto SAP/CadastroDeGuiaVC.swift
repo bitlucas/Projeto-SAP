@@ -25,7 +25,6 @@ class CadastroDeGuiaVC: UIViewController {
 
     
     @IBAction func close(_ sender : UIButton!) {
-        
         let transition: CATransition = CATransition()
         transition.duration = 0.5
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
