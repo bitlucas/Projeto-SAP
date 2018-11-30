@@ -6,11 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Bem-vindo!-->
         <scene sceneID="qgR-1a-HZ9">
             <objects>
                 <viewController storyboardIdentifier="Home" id="ztf-vj-pmS" customClass="HomeVC" customModule="Projeto_SAP" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxR-Hm-SKC" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="146" width="359" height="65"/>
+                                <rect key="frame" x="8" y="242" width="359" height="65"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Jxb-2h-wkh"/>
@@ -38,7 +39,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLE-Hz-aOt" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="246" width="359" height="65"/>
+                                <rect key="frame" x="8" y="342" width="359" height="65"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="1DX-Mk-6ZB"/>
@@ -57,14 +58,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFw-dV-DQP">
-                                <rect key="frame" x="30" y="255" width="47" height="47"/>
+                                <rect key="frame" x="30" y="351" width="47" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="SY7-VR-JE5"/>
                                     <constraint firstAttribute="height" constant="47" id="Tw6-h5-mFE"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-EX-eMN" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="346" width="359" height="65"/>
+                                <rect key="frame" x="8" y="442" width="359" height="65"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="6Si-zB-yPM"/>
@@ -82,16 +83,19 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="z8D-A5-D7D" kind="show" id="m6U-qL-1TV"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funcionario.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7f-L0-V0D">
-                                <rect key="frame" x="30" y="355" width="47" height="47"/>
+                                <rect key="frame" x="30" y="451" width="47" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Mc6-Ec-XmH"/>
                                     <constraint firstAttribute="width" constant="47" id="kqS-pi-VpQ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-8y-anI" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="446" width="359" height="65"/>
+                                <rect key="frame" x="8" y="542" width="359" height="65"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="chr-pA-W3m"/>
@@ -111,14 +115,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-Vb-ypz">
-                                <rect key="frame" x="30" y="155" width="47" height="47"/>
+                                <rect key="frame" x="30" y="251" width="47" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="CWN-64-dTm"/>
                                     <constraint firstAttribute="width" constant="47" id="DR5-ut-IRq"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlU-cG-GTz" customClass="DesignableButton" customModule="Projeto_SAP" customModuleProvider="target">
-                                <rect key="frame" x="8" y="46" width="359" height="65"/>
+                                <rect key="frame" x="8" y="142" width="359" height="65"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="zZX-km-qTy"/>
@@ -137,21 +141,21 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kZf-mE-DBh">
-                                <rect key="frame" x="30" y="55" width="47" height="47"/>
+                                <rect key="frame" x="30" y="151" width="47" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="PvI-hY-Gec"/>
                                     <constraint firstAttribute="width" constant="47" id="QzO-u9-iNp"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relatorio.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ab-7R-b7M">
-                                <rect key="frame" x="30" y="455" width="47" height="47"/>
+                                <rect key="frame" x="30" y="551" width="47" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="8H6-vo-B8o"/>
                                     <constraint firstAttribute="width" constant="47" id="aU0-4S-oBC"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="pxR-Hm-SKC" secondAttribute="trailing" constant="8" id="1CJ-0k-bIb"/>
                             <constraint firstItem="XBq-45-3pW" firstAttribute="trailing" secondItem="pLE-Hz-aOt" secondAttribute="trailing" constant="8" id="2fU-nL-Ws5"/>
@@ -181,12 +185,100 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XBq-45-3pW"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="KLu-cl-3Fb"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" title="Bem-vindo!" largeTitleDisplayMode="always" id="KLu-cl-3Fb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Vk-no-mVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4024.8000000000002" y="-233.43328335832086"/>
+        </scene>
+        <!--Novo Funcionario-->
+        <scene sceneID="6oQ-Rd-pdO">
+            <objects>
+                <viewController id="ELD-AF-9FC" customClass="AddFuncionarioVC" customModule="Projeto_SAP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCu-1L-pFo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq9-Mm-7pH">
+                                <rect key="frame" x="16" y="150" width="44" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MATRICULA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlM-42-MrC">
+                                <rect key="frame" x="16" y="226" width="84" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CARGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tT-Py-LjP">
+                                <rect key="frame" x="16" y="314" width="52" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZb-0O-zzI">
+                                <rect key="frame" x="16" y="179" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-F4-LIJ">
+                                <rect key="frame" x="16" y="256" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAR-HL-sDN">
+                                <rect key="frame" x="16" y="343" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2g-a6-8YF">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IDADE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp6-kI-1af">
+                                <rect key="frame" x="185" y="225" width="44" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5u-6Q-KZw">
+                                <rect key="frame" x="185" y="256" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OvN-Gk-BKF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Novo Funcionario" largeTitleDisplayMode="always" id="mgz-Zw-sRx">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="uVw-Ow-Qzv"/>
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Yam-Q4-bCa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pickerView" destination="x2g-a6-8YF" id="UbX-at-MVs"/>
+                        <outlet property="tfAge" destination="j5u-6Q-KZw" id="zwE-EY-orw"/>
+                        <outlet property="tfID" destination="dwv-F4-LIJ" id="gM7-37-JVQ"/>
+                        <outlet property="tfName" destination="wZb-0O-zzI" id="MZw-xt-MXi"/>
+                        <outlet property="tfRole" destination="RAR-HL-sDN" id="0uK-5w-TzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFo-kZ-63p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5800.8000000000002" y="125.4872563718141"/>
         </scene>
         <!--Popup DateVC-->
         <scene sceneID="kz3-IS-8ah">
@@ -436,11 +528,13 @@
         <!--Navigation Controller-->
         <scene sceneID="st3-Lv-Uec">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="FBB-Xo-BtZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FBB-Xo-BtZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qIN-NW-zKi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="qIN-NW-zKi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.3803921569" green="0.34509803919999998" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" name="Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -451,6 +545,25 @@
             </objects>
             <point key="canvasLocation" x="3173.5999999999999" y="-232.53373313343329"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IWD-4y-MPB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z8D-A5-D7D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="o74-xh-N7A">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.18880763649940491" alpha="0.900390625" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ELD-AF-9FC" kind="relationship" relationship="rootViewController" id="URc-9V-qgN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NML-6U-C6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4861.6000000000004" y="125.4872563718141"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back-arrow.png" width="256" height="256"/>
@@ -460,5 +573,8 @@
         <image name="folder.png" width="512" height="512"/>
         <image name="funcionario.png" width="512" height="512"/>
         <image name="relatorio.png" width="512" height="512"/>
+        <namedColor name="Color">
+            <color red="0.43137254901960786" green="0.64313725490196083" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
