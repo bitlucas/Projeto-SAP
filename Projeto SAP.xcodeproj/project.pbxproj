@@ -10,6 +10,8 @@
 		1C0C1550219F323A00BEB80B /* CadastroDeGuiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C154F219F323A00BEB80B /* CadastroDeGuiaVC.swift */; };
 		1C10A40421AC6EAA00992052 /* PopupDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10A40321AC6EAA00992052 /* PopupDateVC.swift */; };
 		1C1C161121B17BCC0085953F /* AddFuncionarioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C161021B17BCC0085953F /* AddFuncionarioVC.swift */; };
+		1C1C161321B1BB6E0085953F /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C161221B1BB6E0085953F /* ViewController+CoreData.swift */; };
+		1C1C161721B1E5180085953F /* GerenciarFuncionariosTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C161621B1E5180085953F /* GerenciarFuncionariosTableVC.swift */; };
 		1C1DFD2F21A59D6400459C04 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFD2E21A59D6400459C04 /* UIView + Extensions.swift */; };
 		1C39600521B0172F00E99F6D /* relatorio.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C395FFE21B0172D00E99F6D /* relatorio.png */; };
 		1C39600621B0172F00E99F6D /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C395FFF21B0172E00E99F6D /* folder.png */; };
@@ -33,6 +35,8 @@
 		1C0C154F219F323A00BEB80B /* CadastroDeGuiaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroDeGuiaVC.swift; sourceTree = "<group>"; };
 		1C10A40321AC6EAA00992052 /* PopupDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDateVC.swift; sourceTree = "<group>"; };
 		1C1C161021B17BCC0085953F /* AddFuncionarioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuncionarioVC.swift; sourceTree = "<group>"; };
+		1C1C161221B1BB6E0085953F /* ViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreData.swift"; sourceTree = "<group>"; };
+		1C1C161621B1E5180085953F /* GerenciarFuncionariosTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GerenciarFuncionariosTableVC.swift; sourceTree = "<group>"; };
 		1C1DFD2E21A59D6400459C04 /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		1C395FFE21B0172D00E99F6D /* relatorio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = relatorio.png; sourceTree = "<group>"; };
 		1C395FFF21B0172E00E99F6D /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 				1C10A40321AC6EAA00992052 /* PopupDateVC.swift */,
 				1C5FD778219B8EB1002E52EB /* HomeVC.swift */,
 				1C0C154F219F323A00BEB80B /* CadastroDeGuiaVC.swift */,
+				1C1C161621B1E5180085953F /* GerenciarFuncionariosTableVC.swift */,
 				1C1C161021B17BCC0085953F /* AddFuncionarioVC.swift */,
 			);
 			path = Controllers;
@@ -97,6 +102,7 @@
 			children = (
 				1C5FD759219B8358002E52EB /* Assets.xcassets */,
 				1C5FD75E219B8358002E52EB /* Info.plist */,
+				1C1C161221B1BB6E0085953F /* ViewController+CoreData.swift */,
 				1C5FD752219B8357002E52EB /* AppDelegate.swift */,
 				1C5FD764219B8448002E52EB /* Files */,
 				1C1C160D21B17B7C0085953F /* Controllers */,
@@ -221,11 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1C161721B1E5180085953F /* GerenciarFuncionariosTableVC.swift in Sources */,
 				1C1C161121B17BCC0085953F /* AddFuncionarioVC.swift in Sources */,
 				1C5FD753219B8357002E52EB /* AppDelegate.swift in Sources */,
 				1C5FD779219B8EB1002E52EB /* HomeVC.swift in Sources */,
 				1C10A40421AC6EAA00992052 /* PopupDateVC.swift in Sources */,
 				1CD68A44219CD3A600E93178 /* DesignableButton.swift in Sources */,
+				1C1C161321B1BB6E0085953F /* ViewController+CoreData.swift in Sources */,
 				1C1DFD2F21A59D6400459C04 /* UIView + Extensions.swift in Sources */,
 				1C0C1550219F323A00BEB80B /* CadastroDeGuiaVC.swift in Sources */,
 				1CB3759721B0C90F008AD101 /* FuncionariosModel.xcdatamodeld in Sources */,

@@ -12,23 +12,23 @@ class AddFuncionarioVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
 
     @IBOutlet weak var tfName: UITextField!
     @IBOutlet weak var tfID: UITextField!
-    @IBOutlet weak var tfAge: UITextField!
     @IBOutlet weak var tfRole: UITextField!
-    @IBOutlet weak var pickerView: UIPickerView!
+    let pickerView = UIPickerView()
     
-    let roles = ["Cobrador","Motorista"]
+    private let roles = ["Cobrador","Motorista"]
+    
+    var funcionario : Funcionario!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pickerView.dataSource = self
+        
+        tfRole.inputView = pickerView
         pickerView.delegate = self
         
         // Do any additional setup after loading the view.
     }
-    
-    
-    
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -38,11 +38,33 @@ class AddFuncionarioVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        tfRole.text = roles[row]
         return roles[row]
-        
+        }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        tfRole.text = roles[row]
+        self.view.endEditing(true)
     }
-
     
-
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func AddFuncionario(_ sender: UIButton) {
+        if funcionario == nil {
+            funcionario = Funcionario(context: managedObjectContext)
+        }
+        
+       
+        funcionario.name = tfName?.text
+        funcionario.id = Int16((tfID?.text)!)!
+        funcionario.role = tfRole?.text
+        
+        do {
+            try managedObjectContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+        navigationController?.popViewController(animated: true)
+    }
 }

@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Cobrador" representedClassName="Cobrador" syncable="YES" codeGenerationType="class">
-        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    <entity name="Funcionario" representedClassName="Funcionario" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="onibus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Onibus" inverseName="cobrador" inverseEntity="Onibus" syncable="YES"/>
-    </entity>
-    <entity name="Motorista" representedClassName="Motorista" syncable="YES" codeGenerationType="class">
-        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="onibus" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Onibus" inverseName="motorista" inverseEntity="Onibus" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Onibus" representedClassName="Onibus" syncable="YES" codeGenerationType="class">
-        <attribute name="cod" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="cobrador" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cobrador" inverseName="onibus" inverseEntity="Cobrador" syncable="YES"/>
-        <relationship name="motorista" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Motorista" inverseName="onibus" inverseEntity="Motorista" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="venc" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Cobrador" positionX="-2602.62109375" positionY="2330.2265625" width="129.484375" height="103"/>
-        <element name="Motorista" positionX="-2605.90625" positionY="2460.5703125" width="131.078125" height="103"/>
-        <element name="Onibus" positionX="-2806.61328125" positionY="2376.05859375" width="128" height="88"/>
+        <element name="Funcionario" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="Onibus" positionX="-18" positionY="54" width="128" height="75"/>
     </elements>
 </model>
