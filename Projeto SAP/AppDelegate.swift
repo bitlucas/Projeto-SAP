@@ -5,7 +5,7 @@
 //  Created by Lucas Bitar on 13/11/18.
 //  Copyright © 2018 Lucas Bitar. All rights reserved.
 //
-
+import CoreData
 import UIKit
 
 @UIApplicationMain
@@ -40,7 +40,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        
+        let container = NSPersistentContainer(name: "FuncionariosModel")
+        container.loadPersistentStores(completionHandler : { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Error has occured")
+            }
+        })
+        return container
+    }()
+    
+    
+    func saveContext() {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let error = error as NSError
+                fatalError("error has occured")
+            }
+        }
+    }
+ 
 }
 

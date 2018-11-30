@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C0C154E219F211700BEB80B /* ControleDeFrotaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C154D219F211700BEB80B /* ControleDeFrotaVC.swift */; };
 		1C0C1550219F323A00BEB80B /* CadastroDeGuiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C154F219F323A00BEB80B /* CadastroDeGuiaVC.swift */; };
 		1C10A40421AC6EAA00992052 /* PopupDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10A40321AC6EAA00992052 /* PopupDateVC.swift */; };
 		1C1DFD2F21A59D6400459C04 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFD2E21A59D6400459C04 /* UIView + Extensions.swift */; };
@@ -25,11 +24,11 @@
 		1C5FD75D219B8358002E52EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5FD75B219B8358002E52EB /* LaunchScreen.storyboard */; };
 		1C5FD779219B8EB1002E52EB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5FD778219B8EB1002E52EB /* HomeVC.swift */; };
 		1CB3759121B01F44008AD101 /* check-mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB3759021B01F44008AD101 /* check-mark.png */; };
+		1CB3759721B0C90F008AD101 /* FuncionariosModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CB3759521B0C90F008AD101 /* FuncionariosModel.xcdatamodeld */; };
 		1CD68A44219CD3A600E93178 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD68A43219CD3A600E93178 /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C0C154D219F211700BEB80B /* ControleDeFrotaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleDeFrotaVC.swift; sourceTree = "<group>"; };
 		1C0C154F219F323A00BEB80B /* CadastroDeGuiaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroDeGuiaVC.swift; sourceTree = "<group>"; };
 		1C10A40321AC6EAA00992052 /* PopupDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDateVC.swift; sourceTree = "<group>"; };
 		1C1DFD2E21A59D6400459C04 /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		1C5FD75E219B8358002E52EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C5FD778219B8EB1002E52EB /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		1CB3759021B01F44008AD101 /* check-mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-mark.png"; sourceTree = "<group>"; };
+		1CB3759621B0C90F008AD101 /* FuncionariosModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FuncionariosModel.xcdatamodel; sourceTree = "<group>"; };
 		1CD68A43219CD3A600E93178 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,10 +85,10 @@
 				1C5FD764219B8448002E52EB /* Files */,
 				1C5FD752219B8357002E52EB /* AppDelegate.swift */,
 				1C10A40321AC6EAA00992052 /* PopupDateVC.swift */,
+				1CB3759521B0C90F008AD101 /* FuncionariosModel.xcdatamodeld */,
 				1C5FD759219B8358002E52EB /* Assets.xcassets */,
 				1C5FD778219B8EB1002E52EB /* HomeVC.swift */,
 				1C0C154F219F323A00BEB80B /* CadastroDeGuiaVC.swift */,
-				1C0C154D219F211700BEB80B /* ControleDeFrotaVC.swift */,
 				1C5FD775219B8AD5002E52EB /* Views */,
 				1C5FD75E219B8358002E52EB /* Info.plist */,
 			);
@@ -212,11 +212,11 @@
 			files = (
 				1C5FD753219B8357002E52EB /* AppDelegate.swift in Sources */,
 				1C5FD779219B8EB1002E52EB /* HomeVC.swift in Sources */,
-				1C0C154E219F211700BEB80B /* ControleDeFrotaVC.swift in Sources */,
 				1C10A40421AC6EAA00992052 /* PopupDateVC.swift in Sources */,
 				1CD68A44219CD3A600E93178 /* DesignableButton.swift in Sources */,
 				1C1DFD2F21A59D6400459C04 /* UIView + Extensions.swift in Sources */,
 				1C0C1550219F323A00BEB80B /* CadastroDeGuiaVC.swift in Sources */,
+				1CB3759721B0C90F008AD101 /* FuncionariosModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CB3759521B0C90F008AD101 /* FuncionariosModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CB3759621B0C90F008AD101 /* FuncionariosModel.xcdatamodel */,
+			);
+			currentVersion = 1CB3759621B0C90F008AD101 /* FuncionariosModel.xcdatamodel */;
+			path = FuncionariosModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1C5FD747219B8357002E52EB /* Project object */;
 }
