@@ -47,7 +47,7 @@ class AddFuncionarioVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
     }
     
     @IBAction func backButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func AddFuncionario(_ sender: UIButton) {
